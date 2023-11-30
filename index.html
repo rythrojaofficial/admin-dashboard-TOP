@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="dashboard">
-            <div id="dashboard-header">icon, Dashboard in flex row</div>
+            <div id="dashboard-header"><ion-icon name="logo-electron"></ion-icon> Dashboard</div>
             <div class="dashboard-container" id="dashboard-main">
                 <div class="dashboard-item" id="home">home</div>
                 <div class="dashboard-item" id="profile">profile</div>
@@ -18,42 +18,42 @@
                 <div class="dashboard-item" id="history">history</div>
                 <div class="dashboard-item" id="tasks">tasks</div>
                 <div class="dashboard-item" id="communites">communities</div>
-            </div>    
+                </div>    
 
             <div class="dashboard-container" id="dashboard-settings">
                 <div class="dashboard-item" id="settings">settings</div>
                 <div class="dashboard-item" id="support">support</div>
                 <div class="dashboard-item" id="privacy">privacy</div>
-            </div>
+                </div>
         </div>
 
         <header>
             <div class="header-row-1">
                 <div class="search-container">
-                    <div id="search-icon">search icon</div>
-                    <div id="searchbar">search bar</div>
+                    <div id="search-icon"><ion-icon name="search-sharp"></ion-icon></div>
+                    <input id="searchbar">
                 </div>
                 
                 <div class="notifications-container">
-                    <div id="notification-icon">notification icon</div>
-                    <div id="small-profile-icon">profile icon</div>
+                    <div id="notification-icon"><ion-icon name="notifications-outline"></ion-icon></div>
+                    <div id="small-profile-icon"><ion-icon name="person-outline"></ion-icon></div>
                     <div id="small-profile-name">profile name</div>
                 </div>
                 
             </div>
             <div class="header-row-2">
                 <div class="profile-container">
-                    <div id="large-profile-icon">large profile icon</div>
+                    <div id="large-profile-icon"><ion-icon name="person-outline" size="large"></ion-icon></div>
                     <div class="greeting">
                         <div id="greeting-message">Hi there,</div>
-                        <div id="user-tag"></div>
+                        <div id="user-tag">Yanky Doodle (@YnotDoodle)</div>
                     </div>
                 </div>
                 
                 <nav>
-                    <div class="new-button">new button</div>
-                    <div class="upload-button">upload button</div>
-                    <div class="share-button">share button</div>
+                    <div class="new-button">new </div>
+                    <div class="upload-button">upload </div>
+                    <div class="share-button">share </div>
                 </nav>
             </div>
         </header>
@@ -163,5 +163,6 @@
 
     </div>
     
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    
 </body>
 </html>
