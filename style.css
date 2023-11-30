@@ -23,7 +23,7 @@ body{
 .container{
     background-color: var(--gray);
     display: grid;
-    grid-template-columns: minmax(180px, .5fr) minmax(300px, 2fr) minmax(300px,.6fr);
+    grid-template-columns: minmax(180px, .5fr) minmax(300px, 2fr) minmax(300px,.75fr);
     grid-template-rows: 1 repeat(2, minmax(1000px, 33%)) 
 }
 .dashboard{
@@ -141,6 +141,7 @@ ion-icon{
 .sidebar{
     padding: 1.5rem;
     padding-top: 2rem;
+    margin-right: 2rem;
 }
     .announcements-flex,
     .trending-flex{
