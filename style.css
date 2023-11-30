@@ -23,13 +23,11 @@ body{
 .container{
     background-color: var(--gray);
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr)) repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height:100vh
+    grid-template-columns: minmax(180px, 1fr) repeat(2, minmax(300px, 1fr)) 1fr minmax(300px,1fr);
 }
 .dashboard{
     background-color: var(--blue);
-    grid-row: 1 / 6;
+    grid-row: 1 / 5;
     padding: 1rem;
     line-height: 2;
     color: var(--white);
@@ -112,7 +110,7 @@ ion-icon{
 }
     .projects-grid{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));   
         margin: 1rem;
         gap: 1rem;
     }
@@ -128,7 +126,6 @@ ion-icon{
         }
         .grid-item{
             border-left: solid var(--card-border-radius) var(--oj);
-            /* height: 20vh; */
         }
             .projects-title{
                 font-weight: bold;
@@ -145,6 +142,22 @@ ion-icon{
     padding: 1.5rem;
     padding-top: 2rem;
 }
+    .announcements-flex p{
+        overflow: hidden;
+        height: 5vh;
+    }
+    .trending-flex img{
+        height: 40px;
+        border-radius: 40px;
+    }
+    .trending-item{
+        display: flex;
+        gap:1rem;
+        
+    }
+    .titles :last-child{
+        color:gray
+    }
 
 
 
