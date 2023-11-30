@@ -23,7 +23,7 @@ body{
 .container{
     background-color: var(--gray);
     display: grid;
-    grid-template-columns: minmax(180px, 1fr) repeat(2, minmax(300px, 1fr)) 1fr minmax(300px,1fr);
+    grid-template-columns: minmax(180px, .5fr) repeat(2, minmax(300px, 1fr)) 1fr minmax(300px,1fr);
 }
 .dashboard{
     background-color: var(--blue);
@@ -143,7 +143,9 @@ ion-icon{
     padding-top: 2rem;
 }
     .announcements-flex p{
-        overflow: hidden;
+        overflow:hidden;
+        white-space: nowrap ;
+        text-overflow: ellipsis;
         height: 5vh;
     }
     .trending-flex img{
