@@ -23,7 +23,8 @@ body{
 .container{
     background-color: var(--gray);
     display: grid;
-    grid-template-columns: minmax(180px, .5fr) repeat(2, minmax(300px, 1fr)) 1fr minmax(300px,1fr);
+    grid-template-columns: minmax(180px, .5fr) minmax(300px, 2fr) minmax(300px,.6fr);
+    grid-template-rows: 1 repeat(2, minmax(1000px, 33%)) 
 }
 .dashboard{
     background-color: var(--blue);
@@ -48,7 +49,7 @@ body{
     }
 
 header{
-    grid-column: 2 / 6;
+    grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
     .header-row-1,
@@ -104,7 +105,7 @@ ion-icon{
 }
 
 .main-content{
-    grid-column: 2 / 5;
+    grid-column: 2 / 3;
     margin: 1rem;
     margin-top: 2rem;
 }
@@ -138,10 +139,14 @@ ion-icon{
             }
 
 .sidebar{
-    grid-column: 5 / 6;
     padding: 1.5rem;
     padding-top: 2rem;
 }
+    .announcements-flex,
+    .trending-flex{
+        grid-column: 3 / 4;
+    }
+
     .announcements-flex p{
         overflow:hidden;
         white-space: nowrap ;
